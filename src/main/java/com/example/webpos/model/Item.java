@@ -9,6 +9,10 @@ public class Item {
     private Product product;
     private int quantity;
 
+    public void addQuantity(int q) {
+        quantity += q;
+    }
+
     @Override
     public String toString(){
         return product.toString() +"\t" + quantity;
